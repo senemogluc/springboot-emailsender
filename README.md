@@ -16,11 +16,11 @@ This project serves as a Proof of Concept (POC) for sending emails using Spring 
 git clone https://github.com/senemogluc/springboot-emailsender-poc.git
 ```
 
-2.1. **Configure Email Settings**:
+2. **Clone the Repository**:
 - Open `application.yml`.
 - Modify the properties related to the email server setup according to your SMTP server configuration.
 
-2.2. **Configuration**:
+3. **Configuration**:
 
 ```yaml
 mail:
@@ -36,7 +36,7 @@ mail:
           enable: ${MAIL_SENDER_STARTTLS_ENABLE:true}
 ```
 
-3.1. **Request**:
+4.  **Request**:
 
 ```json
 {
@@ -47,7 +47,7 @@ mail:
 }
 ```
 
-3.2. **Curl**:
+5.  **Curl**:
 
 ```
 curl -X 'POST' \
