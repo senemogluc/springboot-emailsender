@@ -40,8 +40,8 @@ mail:
 
 ```json
 {
-  "to": "cagin.senemoglu@gmail.com",
-  "cc": ["cagin.senemoglu@gmail.com"],
+  "to": "receiver.mail@gmail.com",
+  "cc": ["cc.mail@gmail.com"],
   "subject": "Example subject",
   "body": "Example body"
 }
@@ -51,7 +51,7 @@ mail:
 
 ```
 curl -X 'POST' \
-  'http://localhost:8080/api/email/send?to=cagin.senemoglu%40gmail.com&cc=cagin.senemoglu@gmail.com&subject=Example%20subject&body=Example%20body' \
+  'http://localhost:8080/api/email/send?to=receiver.mail%40gmail.com&cc=cc.mail@gmail.com&subject=Example%20subject&body=Example%20body' \
   -H 'accept: */*' \
   -d ''
 ```
