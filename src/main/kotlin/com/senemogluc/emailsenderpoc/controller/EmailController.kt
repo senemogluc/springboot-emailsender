@@ -13,6 +13,6 @@ class EmailController(private val emailService: EmailService) {
     @PostMapping("/send")
     fun sendMail(request: SendEmailRequest) = emailService.sendMail(request)
 
-    @PostMapping("/send/template")
+    @PostMapping("/send-with-template")
     fun sendMailWithTemplate(request: SendEmailRequest) = emailService.sendMailWithTemplate(request)
 }
