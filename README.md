@@ -16,7 +16,7 @@ This project serves as a Proof of Concept (POC) for sending emails using Spring 
 git clone https://github.com/senemogluc/springboot-emailsender-poc.git
 ```
 
-2. **Clone the Repository**:
+2. **About Configuration**:
 - Open `application.yml`.
 - Modify the properties related to the email server setup according to your SMTP server configuration.
 
