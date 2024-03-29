@@ -11,6 +11,7 @@ class EmailService(
     private val template: SimpleMailMessage
 ) {
     fun sendMail(request: SendEmailRequest){
+
         val message = SimpleMailMessage()
 
         message.setTo(request.to)
@@ -20,8 +21,7 @@ class EmailService(
         javaMailSender.send(message)
     }
 
-    fun sendMailWithTemplate(request: SendEmailRequest
-    ) {
+    fun sendMailWithTemplate(request: SendEmailRequest) {
 
         val message = SimpleMailMessage(template)
         val text = template.text
