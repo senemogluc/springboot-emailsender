@@ -36,7 +36,18 @@ mail:
           enable: ${MAIL_SENDER_STARTTLS_ENABLE:true}
 ```
 
-3. **Curl**:
+3.1. **Request**:
+
+```json
+{
+  "to": "cagin.senemoglu@gmail.com",
+  "cc": ["cagin.senemoglu@gmail.com"],
+  "subject": "Example subject",
+  "body": "Example body"
+}
+```
+
+3.2. **Curl**:
 
 ```
 curl -X 'POST' \
