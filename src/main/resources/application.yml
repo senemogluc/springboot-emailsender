@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: EmailSender-POC
+  mail:
+    host: ${MAIL_SENDER_HOST:smtp-mail.outlook.com}
+    port: ${MAIL_SENDER_PORT:587}
+    username: ${MAIL_SENDER_USERNAME:cagin.senemoglu@outlook.com.tr}
+    password: ${MAIL_SENDER_PASSWORD:rfhpbgeveszevhqz}
+    properties:
+      mail:
+        smtp:
+          auth: ${MAIL_SENDER_AUTH:true}
+          starttls:
+            enable: ${MAIL_SENDER_STARTTLS_ENABLE:true}
