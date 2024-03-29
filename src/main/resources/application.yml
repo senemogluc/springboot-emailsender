@@ -2,7 +2,7 @@ spring:
   application:
     name: EmailSender-POC
   mail:
-    host: ${MAIL_SENDER_HOST:smtp-mail.outlook.com}
+    host: ${MAIL_SENDER_HOST:smtp.gmail.com}
     port: ${MAIL_SENDER_PORT:587}
     username: ${MAIL_SENDER_USERNAME}
     password: ${MAIL_SENDER_PASSWORD}
