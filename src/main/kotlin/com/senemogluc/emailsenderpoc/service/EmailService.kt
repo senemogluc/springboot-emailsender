@@ -10,7 +10,7 @@ class EmailService(
     private val javaMailSender: JavaMailSender,
     private val template: SimpleMailMessage
 ) {
-    fun sendMail(request: SendEmailRequest){
+    fun sendMail(request: SendEmailRequest) {
 
         val message = SimpleMailMessage()
 
