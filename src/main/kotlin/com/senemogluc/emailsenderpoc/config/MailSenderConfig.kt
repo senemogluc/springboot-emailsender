@@ -3,12 +3,11 @@ package com.senemogluc.emailsenderpoc.config
 import com.senemogluc.emailsenderpoc.config.properties.MailSenderProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import org.springframework.context.annotation.Profile
 import org.springframework.mail.javamail.JavaMailSender
 import org.springframework.mail.javamail.JavaMailSenderImpl
 import java.util.Properties
 
-@Profile("manual-config")
+
 @Configuration
 class MailSenderConfig(private val mailSenderProperties: MailSenderProperties) {
 
