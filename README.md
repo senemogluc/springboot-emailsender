@@ -13,7 +13,7 @@ This project serves as a Proof of Concept (POC) for sending emails using Spring 
 
 1. **Clone the Repository**:
 ```
-git clone https://github.com/senemogluc/springboot-emailsender-poc.git
+git clone https://github.com/senemogluc/springboot-emailsender.git
 ```
 
 2. **About Configuration**:
